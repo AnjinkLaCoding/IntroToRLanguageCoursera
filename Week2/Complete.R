@@ -1,3 +1,5 @@
+#A function to count how many rows that both sulfate and nitrate value is not NaN
+
 complete <- function(directory, id = 1:332){
   data_matrix <- matrix(nrow = length(id), ncol = 2)
   num_id <- c()
@@ -10,4 +12,5 @@ complete <- function(directory, id = 1:332){
   }
   dataframe <- data.frame(num_id, num_nobs)
   return(dataframe)
+
 }
