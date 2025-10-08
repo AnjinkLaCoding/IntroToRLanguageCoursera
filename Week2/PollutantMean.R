@@ -1,3 +1,5 @@
+#Calculate the mean of pollutant from all the id's
+
 pollutantmean <- function(directory, pollutant, id = 1:332){
   count <- 0
   PolVal <- c()
@@ -8,4 +10,5 @@ pollutantmean <- function(directory, pollutant, id = 1:332){
   }
   means <- mean(PolVal, na.rm = TRUE)
   print(means)
+
 }
