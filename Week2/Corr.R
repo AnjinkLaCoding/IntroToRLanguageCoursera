@@ -1,3 +1,5 @@
+# To calculate the correlation between sulfate and nitrate for each id
+
 corr <- function(directory, threshold = 0){
   dataframe <- complete(directory)
   correlation <- c()
@@ -16,4 +18,5 @@ corr <- function(directory, threshold = 0){
   }
   
   return(correlation)
+
 }
